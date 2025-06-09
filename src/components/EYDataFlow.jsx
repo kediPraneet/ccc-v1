@@ -10,6 +10,7 @@ const EYDataFlow = () => {
   const [showF2, setShowF2] = useState(false);
   const [showF3, setShowF3] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
+  const [showAnalystVideo, setShowAnalystVideo] = useState(false);
 
   return (
     <div className="hero-container">
@@ -72,8 +73,9 @@ const EYDataFlow = () => {
           <div className="left-column node-column">
             <div
               className="flow-node"
-              style={{ cursor: "default" }}
-              title="EY Analyst"
+              style={{ cursor: "pointer" }}
+              title="Click to view EY Analyst video"
+              onClick={() => setShowAnalystVideo(true)}
             >
               <div className="glow-effect"></div>
               <svg className="node-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -252,6 +254,38 @@ const EYDataFlow = () => {
               }}
             >
               <source src="/image/vid.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      )}
+
+      {/* Analyst Video Player Modal */}
+      {showAnalystVideo && (
+        <div className="video-overlay">
+          <div className="video-container">
+            <button 
+              className="video-close-btn"
+              onClick={() => setShowAnalystVideo(false)}
+            >
+              ×
+            </button>
+            <video
+              width="100%"
+              height="100%"
+              autoPlay
+              muted
+              playsInline
+              onEnded={(e) => {
+                e.target.currentTime = e.target.duration;
+              }}
+              style={{ 
+                borderRadius: "12px",
+                objectFit: "cover",
+                background: "#1a1a1a"
+              }}
+            >
+              <source src="/image/vid11.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

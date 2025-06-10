@@ -11,6 +11,9 @@ const EYDataFlow = () => {
   const [showF3, setShowF3] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
   const [showAnalystVideo, setShowAnalystVideo] = useState(false);
+  const [showArchitectureVideo, setShowArchitectureVideo] = useState(false);
+  const [showImplementationVideo, setShowImplementationVideo] = useState(false);
+  const [showUsecaseVideo, setShowUsecaseVideo] = useState(false);
 
   return (
     <div className="hero-container">
@@ -180,18 +183,22 @@ const EYDataFlow = () => {
           <div className="engineering-boxes">
             <div
               className="engineering-box"
-              onClick={() => setShowF2(true)}
+              onClick={() => setShowArchitectureVideo(true)}
               style={{ cursor: "pointer" }}
             >
               Architecture & Design
             </div>
-            <div className="engineering-box">
+            <div 
+              className="engineering-box"
+              onClick={() => setShowImplementationVideo(true)}
+              style={{ cursor: "pointer" }}
+            >
               <div className="glow-effect"></div>
               Implementation
             </div>
             <div
               className="engineering-box"
-              onClick={() => setShowF3(true)}
+              onClick={() => setShowUsecaseVideo(true)}
               style={{ cursor: "pointer" }}
             >
               Usecase Management
@@ -286,6 +293,102 @@ const EYDataFlow = () => {
               }}
             >
               <source src="/image/vid11.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      )}
+
+      {/* Architecture Video Player Modal */}
+      {showArchitectureVideo && (
+        <div className="video-overlay">
+          <div className="video-container">
+            <button 
+              className="video-close-btn"
+              onClick={() => setShowArchitectureVideo(false)}
+            >
+              ×
+            </button>
+            <video
+              width="100%"
+              height="100%"
+              autoPlay
+              muted
+              playsInline
+              onEnded={(e) => {
+                e.target.currentTime = e.target.duration;
+              }}
+              style={{ 
+                borderRadius: "12px",
+                objectFit: "cover",
+                background: "#1a1a1a"
+              }}
+            >
+              <source src="/image/arc.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      )}
+
+      {/* Implementation Video Player Modal */}
+      {showImplementationVideo && (
+        <div className="video-overlay">
+          <div className="video-container">
+            <button 
+              className="video-close-btn"
+              onClick={() => setShowImplementationVideo(false)}
+            >
+              ×
+            </button>
+            <video
+              width="100%"
+              height="100%"
+              autoPlay
+              muted
+              playsInline
+              onEnded={(e) => {
+                e.target.currentTime = e.target.duration;
+              }}
+              style={{ 
+                borderRadius: "12px",
+                objectFit: "cover",
+                background: "#1a1a1a"
+              }}
+            >
+              <source src="/image/im.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      )}
+
+      {/* Usecase Video Player Modal */}
+      {showUsecaseVideo && (
+        <div className="video-overlay">
+          <div className="video-container">
+            <button 
+              className="video-close-btn"
+              onClick={() => setShowUsecaseVideo(false)}
+            >
+              ×
+            </button>
+            <video
+              width="100%"
+              height="100%"
+              autoPlay
+              muted
+              playsInline
+              onEnded={(e) => {
+                e.target.currentTime = e.target.duration;
+              }}
+              style={{ 
+                borderRadius: "12px",
+                objectFit: "cover",
+                background: "#1a1a1a"
+              }}
+            >
+              <source src="/image/ucm.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

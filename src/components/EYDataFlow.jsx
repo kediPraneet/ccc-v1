@@ -29,7 +29,7 @@ const EYDataFlow = () => {
         {/* Header */}
         <div className="header-box">
           <strong>Cyber Command & Control Centre (CCCC)</strong><br />
-          Executive Security Intelligence Briefings, Monitoring/Correlation Rule Design, OPCO Regulatory Security Oversight, Consolidated Monitoring/Security Metrics, Governance, Local/Regulatory Intel, Briefings
+          Executive Security Intelligence Briefings, Monitoring/Correlation Rule Design, Consolidated Monitoring/Security Metrics, Governance, Local/Regulatory Intel, Briefings
         </div>
         
         <div className="flow-container">

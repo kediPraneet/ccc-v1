@@ -20,7 +20,7 @@ const App = () => {
               <>
                 <HeroSection />
                 <EyDataFlow />
-                <EYDeliveryModels />
+                {/* <EYDeliveryModels /> */}
                 <ImageSlider />
                 <LogoSlider />
                 <Footer />

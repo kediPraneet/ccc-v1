@@ -32,7 +32,8 @@
     padding: 1rem;
     text-align: center;
     margin-top: 3rem;
-    margin-left: 3rem;
+    margin-right:2rem;
+    margin-left: 1rem;
     margin-bottom: 5rem;
     font-size: 0.9rem;
     
@@ -490,7 +491,7 @@
   }
   .connection-arrow.to-Source {
     left: 516.5px;
-    top: 128%;
+    top: 130%;
     transform: translateY(-50%) rotate(-90deg);
   }
   
@@ -611,7 +612,7 @@
   .data-sources-section {
 background: rgba(40, 40, 40, 0.9);
     border-radius: 10px !important;
-    margin: 1.5rem 0 0 0 !important;  /* Increased top margin for more space */
+    margin: 3.0rem 0 0 0 !important;  /* Increased top margin for more space */
     padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.04) !important;
   }
@@ -620,7 +621,7 @@ background: rgba(40, 40, 40, 0.9);
     font-size: 0.85rem !important;
     margin-bottom: 0.9rem !important;
     text-align: center !important;
-    width: 100%;
+    width: 95%;
     font-weight: bold !important;
   }
   
@@ -638,7 +639,7 @@ background: rgba(40, 40, 40, 0.9);
     font-weight: 600 !important;
     border-radius: 6px !important;
     padding: 0.3rem 0.7rem !important;
-    min-width: 70px !important;
+    min-width: 60px !important;
     font-size: 0.72rem !important;
     margin-bottom: 0.08rem !important;
     text-align: center !important;

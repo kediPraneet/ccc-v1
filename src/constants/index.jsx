@@ -7,7 +7,7 @@ import { GlobeLock } from "lucide-react";
 
 export const navItems = [
   { label: "Home", href: "#" },
-  { label: "Incident Response", href: "https://virtualr-main-30d5ec33i-kp0702s-projects.vercel.app/" },
+  { label: "Incident Response", href: "https://praneet-k6687czbk-kp0702s-projects.vercel.app" },
   { label: "SOC Workflow", href: "#flowchart" },
   { label: "IR TTX", href: "http://localhost:5174" },
 ];
